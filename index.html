@@ -1,7 +1,413 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
   <head>
     <title>SPAN | Sensing and Processing Across Networks at Utah</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript">
+    if (!window.jsMath) {window.jsMath = {}}
+    
+    jsMath.Easy = {
+      root: "/modules/jsmath/jsMath",
+      scale: 120,
+      autoload: 1,
+      processSlashParens: 1,
+      processSlashBrackets: 1,
+      processLaTeXenvironments: 1,
+      processDoubleDollars: 1,
+      processSingleDollars: 1,
+      fixEscapedDollars: 1,
+      doubleDollarsAreInLine: 0,
+      allowDisableTag: 0,
+      customDelimiters: ['[math]','[/math]','[display]','[/display]'],
+      allowDoubleClicks: 1,
+      showFontWarnings: 1,
+      method:  "Process",
+      loadFiles: ["extensions/AMSmath.js", "extensions/AMSsymbols.js"],
+      loadFonts: [],
+      allowGlobal: 1,
+      noImageFonts: 0
+    };
+    </script>
+    <script type="text/javascript" src="/modules/jsmath/jsMath/jsMath-easy-load.js"></script>
+<link rel="alternate" type="application/rss+xml" title="SPAN RSS" href="http://span.ece.utah.edu/rss.xml" />
+
+<link rel="shortcut icon" href="/uploads/garland_favicon.png" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" media="all" href="/modules/aggregator/aggregator.css?L" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/node/node.css?L" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/poll/poll.css?L" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/defaults.css?L" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system.css?L" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system-menus.css?L" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/user/user.css?L" />
+<link type="text/css" rel="stylesheet" media="all" href="/uploads/color/garland-3e926cc6/style.css?L" />
+<link type="text/css" rel="stylesheet" media="print" href="/themes/garland/print.css?L" />
+        <!--[if lt IE 7]>
+      <link type="text/css" rel="stylesheet" media="all" href="/themes/garland/fix-ie.css" />    <![endif]-->
   </head>
+  <body class="sidebar-left">
+
+<!-- Layout -->
+  <div id="header-region" class="clear-block"></div>
+
+    <div id="wrapper">
+    <div id="container" class="clear-block">
+
+      <div id="header">
+        <div id="logo-floater">
+        <h1><a href="/" title="Sensing and Processing Across Networks at Utah"><img src="/uploads/garland_logo.png" alt="Sensing and Processing Across Networks at Utah" id="logo" /><span>Sensing and Processing Across Networks at Utah</span></a></h1>        </div>
+
+                                                    
+      </div> <!-- /header -->
+
+              <div id="sidebar-left" class="sidebar">
+                    <div id="block-menu-menu-pages" class="clear-block block block-menu">
+
+  <h2>Pages</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first"><a href="http://www.wikicfp.com/cfp/servlet/event.showlist?lownerid=2189&amp;ltype=w" title="Call for papers related to SPAN lab material.">CFP</a></li>
+<li class="collapsed"><a href="/data-and-tools" title="Data &amp; Tools">Data &amp; Tools</a></li>
+<li class="leaf"><a href="http://span.ece.utah.edu/pmwiki/pmwiki.php" title="The old span wiki website">Old SPAN site</a></li>
+<li class="leaf last"><a href="/publications" title="">Publications</a></li>
+</ul></div>
+</div>
+<div id="block-menu-menu-teaching" class="clear-block block block-menu">
+
+  <h2>Teaching</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first"><a href="/3530" title="ECE 3530">ECE 3530</a></li>
+<li class="collapsed"><a href="http://span.ece.utah.edu/6962" title="Applications of Fading Channels Home Page">ECE 6962</a></li>
+<li class="leaf"><a href="/5520" title="ECE 5520">ECE 5520</a></li>
+<li class="collapsed"><a href="/5325" title="ECE 5325/6325 Spring 2013">ECE 5325/6325</a></li>
+<li class="collapsed"><a href="/5510" title="ECE 5510, Random Processes">ECE 5510</a></li>
+<li class="collapsed last"><a href="/6960" title="ECE 6960: Advanced Random Processes and Applications">ECE 6960</a></li>
+</ul></div>
+</div>
+<div id="block-menu-menu-projects" class="clear-block block block-menu">
+
+  <h2>Projects</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first"><a href="/cps" title="Cyber Physical Systems Project">CPS Project</a></li>
+<li class="leaf"><a href="/fall" title="Fall Detection">Fall Detection</a></li>
+<li class="leaf"><a href="/location-distinction" title="PHY-based Location Distinction">Location Distinction</a></li>
+<li class="leaf"><a href="/radio-tomographic-imaging" title="Radio Tomographic Imaging">Radio Tomographic Imaging</a></li>
+<li class="leaf"><a href="/secret_key_establishment" title="Secret Key Establishment from Radio Channel Measurements">Secret Key Establishment</a></li>
+<li class="leaf"><a href="/SDR_channel_sounding" title="Software Defined Radio (SDR) Channel Sounding">SDR Channel Sounding</a></li>
+<li class="leaf"><a href="https://bitbucket.org/rose-line/roseline/" title="">Roseline</a></li>
+<li class="leaf last"><a href="/airquality" title="Indoor Real Time Interactive Air Quality Monitoring System">Air Quality</a></li>
+</ul></div>
+</div>
+<div id="block-menu-menu-people" class="clear-block block block-menu">
+
+  <h2>Current Members</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first"><a href="/neal-patwari" title="Dr. Neal Patwari&#039;s page">Dr. Neal Patwari</a></li>
+<li class="leaf"><a href="https://sites.google.com/site/boccamaurizio/" title="Dr. Maurizio Bocca&#039;s home page">Dr. Maurizio Bocca</a></li>
+<li class="leaf"><a href="/hillyard" title="Peter Hillyard">Peter Hillyard</a></li>
+<li class="leaf"><a href="/Amal" title="Amal Yousseef">Amal Yousseef</a></li>
+<li class="leaf"><a href="http://www.eng.utah.edu/~luong/" title="">Anh Luong</a></li>
+<li class="leaf"><a href="http://sensornetworksresearch.com/index.html" title="">Brad Mager</a></li>
+<li class="leaf"><a href="/kyeong_t_min" title="Kyeong T. Min">Kyeong T. Min</a></li>
+<li class="leaf last"><a href="/michaelempey" title="Michael Empey">Michael Empey</a></li>
+</ul></div>
+</div>
+<div id="block-menu-menu-past" class="clear-block block block-menu">
+
+  <h2>Former Members</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first"><a href="/grads" title="Past graduate students of the SPAN lab.">Graduate Students</a></li>
+<li class="leaf last"><a href="/pastpostdocs" title="Past postdoctoral fellows in the SPAN lab.">Postdoctoral Fellows</a></li>
+</ul></div>
+</div>
+<div id="block-node-0" class="clear-block block block-node">
+
+  <h2>Announcement Feed</h2>
+
+  <div class="content"><a href="/rss.xml" class="feed-icon"><img src="/misc/feed.png" alt="Syndicate content" title="Syndicate" width="16" height="16" /></a></div>
+</div>
+<div id="block-blog-0" class="clear-block block block-blog">
+
+  <h2>Recent blog posts</h2>
+
+  <div class="content"><div class="item-list"><ul><li class="first"><a href="/node/197">Dissertation fixes for the Thesis Office LaTeX template</a></li>
+<li><a href="/node/196">Removing white space around matplotlib figures</a></li>
+<li><a href="/node/195">LaTeX Template for University of Utah Thesis and Dissertation</a></li>
+<li><a href="/thesis-format-utah-university">Tips for U of U thesis format approval</a></li>
+<li><a href="/node/178">YouTube Playlist for RSS-based DFL</a></li>
+<li><a href="/node/160">Capturing camera photos at regular intervals</a></li>
+<li><a href="/follow-joey-wilson-google-plus">Follow me on Google+</a></li>
+<li><a href="/new-rti-improvements-nov-2011">Radio Tomographic Imaging Improvements - Nov 2011</a></li>
+<li><a href="/e-the-story-of-a-number-book-review">Book review - &quot;e: The Story of a Number&quot;</a></li>
+<li class="last"><a href="/eps-to-pdf-all-files-in-directory">Converting PDF to EPS on entire directory</a></li>
+</ul></div><div class="more-link"><a href="/blog" title="Read the latest blog entries.">more</a></div></div>
+</div>
+<div id="block-user-0" class="clear-block block block-user">
+
+  <h2>User login</h2>
+
+  <div class="content"><form action="/node?destination=node"  accept-charset="UTF-8" method="post" id="user-login-form">
+<div><div class="form-item" id="edit-name-wrapper">
+ <label for="edit-name">Username: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" maxlength="60" name="name" id="edit-name" size="15" value="" class="form-text required" />
+</div>
+<div class="form-item" id="edit-pass-wrapper">
+ <label for="edit-pass">Password: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" name="pass" id="edit-pass"  maxlength="60"  size="15"  class="form-text required" />
+</div>
+<input type="submit" name="op" id="edit-submit" value="Log in"  class="form-submit" />
+<div class="item-list"><ul><li class="first last"><a href="/user/password" title="Request new password via e-mail.">Request new password</a></li>
+</ul></div><input type="hidden" name="form_build_id" id="form-40c2b85270d49ceb0fb6ddc40b70c832" value="form-40c2b85270d49ceb0fb6ddc40b70c832"  />
+<input type="hidden" name="form_id" id="edit-user-login-block" value="user_login_block"  />
+
+</div></form>
+</div>
+</div>
+        </div>
+      
+      <div id="center"><div id="squeeze"><div class="right-corner"><div class="left-corner">
+                                                                                          <div class="clear-block">
+	    <div id="block-block-1" class="clear-block block block-block">
+
+
+  <div class="content"><div id="homepageTop">
+<img src="http://span.ece.utah.edu/uploads/ulogo.gif" style="margin: 5px; float:right;" alt="University of Utah" />
+<p>Welcome to the Sensing and Processing Across Networks (SPAN) lab! The SPAN lab is part of the <a href="http://www.ece.utah.edu">Department of Electrical and Computer Engineering</a> at the <a href="http://www.utah.edu">University of Utah</a>.</p>
+<p>The SPAN lab develops inventions for wireless networks which improve their security, reliability, self-awareness, and sensing capabilities. Research applies statistical signal processing, networking, and radio propagation techniques. The innovations have application in localization and tracking, secret key generation for wireless networks, network design and deployment, modeling and analysis. The lab, directed by Neal Patwari, is a combination of the efforts of several graduate and undergraduate researchers.</p>
+</div>
+<h2 style="margin: 20px 0px 5px 0px; border-bottom: 1px solid gray;">SPAN Announcements and News<br />
+<h2>
+</h2></h2></div>
+</div>
+            <div id="node-211" class="node">
+
+
+  <h2><a href="/node/211" title="SPAWC Plenary Talk Slides Posted">SPAWC Plenary Talk Slides Posted</a></h2>
+
+  
+  <div class="content clear-block">
+    <p><img src="http://span.ece.utah.edu/uploads/Screen Shot 2015-08-13 at 10.43.26 AM.png" style="border: 1px solid gray; float: left; margin: 16px" width="240" alt="SPAWC Slides" href="http://www.ece.utah.edu/~npatwari/pubs/SPAWC_2015_Talk.pdf" /></p>
+<p>Neal Patwari presented the plenary talk, "One decade of sensorless sensing: Wireless networks as human context sensors", at the IEEE Signal Processing and Wireless Communications (SPAWC) conference in Stockholm, Sweden.  <a href="http://www.ece.utah.edu/~npatwari/pubs/SPAWC_2015_Talk.pdf">Slides from his talk<a> are now posted.</a></a></p>
+  </div>
+
+  <div class="clear-block">
+    <div class="meta">
+          <div class="terms"><ul class="links inline"><li class="taxonomy_term_7 first last"><a href="/taxonomy/term/7" rel="tag" title="Conference papers accepted and published by members of the SPAN lab.">Conferences</a></li>
+</ul></div>
+        </div>
+
+      </div>
+
+</div>
+<div id="node-210" class="node">
+
+
+  <h2><a href="/node/210" title="Piss Off! The System ">Piss Off! The System </a></h2>
+
+  
+  <div class="content clear-block">
+    <p><img src="http://span.ece.utah.edu/uploads/smallBarley.png" style="border: 1px solid gray; float: right; margin: 16px" alt="Piss Off! The System Video" href="https://www.youtube.com/watch?v=lH_VTyPdDH0" /></p>
+<p>Khanh Nguyen, a summer intern at the SPAN Lab, created and tested a system to water your lawn after your dog has done its business on it, to prevent future urine burn spots.  You can now watch <a href="https://www.youtube.com/watch?v=lH_VTyPdDH0">a video on her system</a>, called "Piss Off! The System".</p>
+  </div>
+
+  <div class="clear-block">
+    <div class="meta">
+        </div>
+
+      </div>
+
+</div>
+<div id="node-209" class="node">
+
+
+  <h2><a href="/node/209" title="Utah Modified Dylos Sensor work wins Best in Session award">Utah Modified Dylos Sensor work wins Best in Session award</a></h2>
+
+  
+  <div class="content clear-block">
+    <p><img src="http://span.ece.utah.edu/uploads/Dylos.PNG" style="border: 1px solid gray; float: left; margin: 16px" width="240" alt="Utah Modified Dylos Sensor" href="https://air.ece.utah.edu/" /></p>
+<p>Congratulations to Kyeong T. Min, whose poster was awarded "Best In Session" at the <a href="http://aihce2015.org/">2015 American Industrial Hygiene Association Conference &amp; Expo</a>, held here in Salt Lake City, Utah.  Kyeong designed and built the "Utah Modified Dylos Sensor", an air quality sensing server and Android app which form a unified sensing, wireless interface, database, and user interface for use in human subjects air quality sensing research.  The poster is titled "Development of a low-cost environmental sensor with remote real-time monitoring of indoor particulate, temperature and relative humidity", and its authors are Ben S Cryder, Darrah K Sleeth, Yue Zhang, Kyeong T Min, Chong Zhang, and Scott C Collingwood.</p>
+  </div>
+
+  <div class="clear-block">
+    <div class="meta">
+          <div class="terms"><ul class="links inline"><li class="taxonomy_term_6 first last"><a href="/taxonomy/term/6" rel="tag" title="Awards received by members of the SPAN lab.">Awards</a></li>
+</ul></div>
+        </div>
+
+      </div>
+
+</div>
+<div id="node-202" class="node">
+
+
+  <h2><a href="/nsf_grant_temporal_fading" title="NSF Grant Awarded to Investigate the &quot;Science of Temporal Fading&quot;">NSF Grant Awarded to Investigate the &quot;Science of Temporal Fading&quot;</a></h2>
+
+  
+  <div class="content clear-block">
+    <p><img src="http://www.nsf.gov/images/logos/nsf1.gif" style="border: 0px solid gray; width: 100px; float: left; margin: 16px;" alt="NSF Logo" />  <img src="http://www.propagation.gatech.edu/mainimages/mainpic.gif" style="border: 0px solid gray; width: 100px; float: right; margin: 16px;" alt="NSF Logo" /> The NSF has funded our research project "Advanced Radio Frequency (RF)-based Environmental Monitoring Systems" to be performed collaboratively at Georgia Tech and the University of Utah.  Prof. <a href="http://span.ece.utah.edu/neal-patwari">Neal Patwari</a> and the SPAN lab will conduct the research at the University of Utah, and Prof. <a href="http://www.ece.gatech.edu/faculty-staff/fac_profiles/bio.php?id=35">Gregory D. Durgin</a> and the <a href="http://www.propagation.gatech.edu/index.htm">Propagation Lab</a> will conduct the research at Georgia Tech. </p>
+<p>The <a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1407949&amp;HistoricalAwards=false">award</a> is an investigation in the science of temporal fading as it is useful for new radio frequency (RF) environmental monitoring (REM) systems.  Temporal fading is the change in the radio channel between a transmitter and receiver, for example, a fluctuating "number of bars" or signal strength between a laptop and access point, even when neither are moving. Past research in temporal fading treats it only as a problem that degrades wireless communication. Emerging research has shown that temporal fading can be exploited to locate, automatically recognize the activity or gesture, and monitor the health of people in the vicinity of a wireless network. These localization, recognition, and monitoring systems are called RF-based environment monitoring (REM) systems. Improvements in REM technologies could aid in the design of police and search-and-rescue systems that locate breathing people in dangerous or collapsed buildings. As another example, REM technologies deployed in a home could detect falls and detect signs of cognitive or physical decline as part of an aging-in-place sensor system. REM technologies could allow people to diagnose disordered sleeping via wireless devices (e.g., cell phones) left on their bedside. Finally, REM systems could revolutionize indoor and outdoor security systems, helping to protect areas and buildings which are difficult to monitor with existing technologies. To date, no fundamental research in temporal fading mechanisms has been performed to support REM applications. Research in this project considers temporal fading and seeks to establish how it is affected by the movements of people in the environment so that it can be exploited for environmental monitoring.</p>
+  </div>
+
+  <div class="clear-block">
+    <div class="meta">
+          <div class="terms"><ul class="links inline"><li class="taxonomy_term_6 first last"><a href="/taxonomy/term/6" rel="tag" title="Awards received by members of the SPAN lab.">Awards</a></li>
+</ul></div>
+        </div>
+
+      </div>
+
+</div>
+<div id="node-200" class="node">
+
+
+  <h2><a href="/ipsn2014best" title="Best Paper Award at IPSN 2014">Best Paper Award at IPSN 2014</a></h2>
+
+  
+  <div class="content clear-block">
+    <p><img src="http://span.ece.utah.edu/uploads/ipsn2014banner_sm.jpg" style="border: 1px solid gray; float: right; margin: 16px" alt="IPSN 2014 logo" href="http://ipsn.acm.org/2014/" /></p>
+<p>Congratulations to Ossi Kaltiokallio, Hüseyin Yigitler, Riku Jäntti, and Neal Patwari!  Their paper, "Catch a Breath: Non-invasive Respiration Rate Monitoring via Wireless Communication", was awarded the Best Paper Award at the <a href="http://ipsn.acm.org/2014/">13th IEEE/ACM International Conference on Information Processing in Sensor Networks (IPSN 2014)</a>, held April 15-17 in Berlin, Germany.  Ossi Kaltiokallio, Hüseyin Yigitler, and Riku Jäntti are affiliated with <a href="http://www.aalto.fi/en/">Aalto University</a> in Espoo, Finland.  Ossi was a visiting researcher in the SPAN lab in 2012.</p>
+  </div>
+
+  <div class="clear-block">
+    <div class="meta">
+          <div class="terms"><ul class="links inline"><li class="taxonomy_term_6 first last"><a href="/taxonomy/term/6" rel="tag" title="Awards received by members of the SPAN lab.">Awards</a></li>
+</ul></div>
+        </div>
+
+      </div>
+
+</div>
+<div id="node-199" class="node">
+
+
+  <h2><a href="/node/199" title="SPAN Research Featured at IEEE RFID 2014">SPAN Research Featured at IEEE RFID 2014</a></h2>
+
+  
+  <div class="content clear-block">
+    <p><img src="http://2014.ieee-rfid.org/files/2014/04/IMG_6174-150x150.jpg" style="border: 1px solid gray; float: left; margin: 16px" width=170px alt="DFL Demo at IEEE RFID 2014" href="http://2014.ieee-rfid.org/files/2014/04/IMG_6174.jpg" /> Neal Patwari was the keynote speaker at the <a href="http://2014.ieee-rfid.org/">2014 IEEE RFID Conference</a> in Orlando, Florida, on April 10, 2014.  He presented a talk, "<a href="http://2014.ieee-rfid.org/files/2014/04/Patwari-RFID-keynote-compressed.pdf">Tracking Without Tags: Environmental Awareness Using RF Tomography</a>", including a demonstration of the types of changes in signal strength experienced on a static link when a person walks through the link.  The <a href="http://2014.ieee-rfid.org/files/2014/04/Patwari-RFID-keynote-compressed.pdf">talk slides</a> are now available.</p>
+  </div>
+
+  <div class="clear-block">
+    <div class="meta">
+          <div class="terms"><ul class="links inline"><li class="taxonomy_term_7 first last"><a href="/taxonomy/term/7" rel="tag" title="Conference papers accepted and published by members of the SPAN lab.">Conferences</a></li>
+</ul></div>
+        </div>
+
+      </div>
+
+</div>
+<div id="node-190" class="node">
+
+
+  <h2><a href="/node/190" title="Brad Mager presents at PIMRC 2013 on Fall Detection">Brad Mager presents at PIMRC 2013 on Fall Detection</a></h2>
+
+  
+  <div class="content clear-block">
+    <p><img src="http://www.ieee-pimrc.org/images/Index_01.jpg" style="border: 1px solid gray; float: right; margin: 16px" width=238px alt="PIMRC 2013 logo" href="http://www.ieee-pimrc.org" /></p>
+<p>Brad Mager presents his paper, "Fall Detection Using RF Sensor Networks", at the <a href="http://www.ieee-pimrc.org/">24th Annual IEEE Symposium on Personal, Indoor, and Mobile Communications Conference (PIMRC '13)</a> in London, on Tuesday September 3.  His paper is the first presented paper in the "Event Sensing and Localization" Session at 11am - 12:40pm.  His paper is co-authored by Neal Patwari and Maurizio Bocca.</p>
+  </div>
+
+  <div class="clear-block">
+    <div class="meta">
+          <div class="terms"><ul class="links inline"><li class="taxonomy_term_7 first last"><a href="/taxonomy/term/7" rel="tag" title="Conference papers accepted and published by members of the SPAN lab.">Conferences</a></li>
+</ul></div>
+        </div>
+
+      </div>
+
+</div>
+<div id="node-189" class="node">
+
+
+  <h2><a href="/SECON2013" title="Merrick McCracken presents at SECON 2013">Merrick McCracken presents at SECON 2013</a></h2>
+
+  
+  <div class="content clear-block">
+    <p><img src="http://span.ece.utah.edu/uploads/Secon13Index_01.png" style="border: 1px solid gray; float: left; margin: 16px" width=170px alt="Award" /> Merrick McCracken presents his paper, <a href="http://arxiv.org/pdf/1303.1418v1">Joint ultra-wideband and signal strength-based through-building tracking for tactical operations</a>, at the 2013 IEEE Intl. Conf. on Sensing, Communications, and Networking, on Wednesday, June 26, in New Orleans.  His paper, co-authored by Maurizio Bocca and Neal Patwari, explores combining ultra-wideband impulse radar with radio tomography in order to achieve accurate localization without having sensors on all sides of an area to be covered.  The idea is particularly motivated by emergency response applications.</p>
+  </div>
+
+  <div class="clear-block">
+    <div class="meta">
+          <div class="terms"><ul class="links inline"><li class="taxonomy_term_7 first last"><a href="/taxonomy/term/7" rel="tag" title="Conference papers accepted and published by members of the SPAN lab.">Conferences</a></li>
+</ul></div>
+        </div>
+
+      </div>
+
+</div>
+<div id="node-188" class="node">
+
+
+  <h2><a href="/node/188" title="Congratulations to Brad Mager!">Congratulations to Brad Mager!</a></h2>
+
+  
+  <div class="content clear-block">
+    <p><img src="http://span.ece.utah.edu/uploads/MagerAward_crop.jpg" style="border: 1px solid gray; float: left; margin: 16px" width=170px alt="Award" /> Brad Mager had a great night at the <a href="http://t.co/0iRDXtmYlZ">ECE Technical Open House Award Banquet</a>.  He was awarded "Outstanding Computer Engineering Student",  and also awarded one of six "Best Presentation" awards for his talk on his senior thesis, "Fall Detection Using RF Sensor Networks".  His talk was also mentioned by the keynote speaker and distinguished alumnus award winner <a href="http://cio.byu.edu/">Dr. John Sutherland</a> as an example of useful research into the "internet of things".  Congrats to Brad on his awards!</p>
+  </div>
+
+  <div class="clear-block">
+    <div class="meta">
+          <div class="terms"><ul class="links inline"><li class="taxonomy_term_6 first last"><a href="/taxonomy/term/6" rel="tag" title="Awards received by members of the SPAN lab.">Awards</a></li>
+</ul></div>
+        </div>
+
+      </div>
+
+</div>
+<div id="node-187" class="node">
+
+
+  <h2><a href="/node/187" title="Dr. Yang Zhao presents at IPSN 2013">Dr. Yang Zhao presents at IPSN 2013</a></h2>
+
+  
+  <div class="content clear-block">
+    <p><img src="http://ipsn.acm.org/2013/images/banner03_02.jpg" style="border: 1px solid gray; float: right; margin: 16px" width=200px alt="IPSN 2013 logo" href="http://ipsn.acm.org/2013" /></p>
+<p>Dr. Yang Zhao presents Thursday, April 11, at the <a href="http://ipsn.acm.org/2013/program.html">12th ACM/IEEE International Conference on Information Processing in Sensor Networks</a> in Philadelphia.  Yang's talk is on his paper, <a href="http://span.ece.utah.edu/uploads/ipsn13-camera_ready.pdf">Radio Tomographic Imaging and Tracking of Stationary and Moving People via Kernel Distance</a>.  </p>
+  </div>
+
+  <div class="clear-block">
+    <div class="meta">
+          <div class="terms"><ul class="links inline"><li class="taxonomy_term_7 first last"><a href="/taxonomy/term/7" rel="tag" title="Conference papers accepted and published by members of the SPAN lab.">Conferences</a></li>
+</ul></div>
+        </div>
+
+      </div>
+
+</div>
+<div class="item-list"><ul class="pager"><li class="pager-current first">1</li>
+<li class="pager-item"><a href="/node?page=1" title="Go to page 2" class="active">2</a></li>
+<li class="pager-item"><a href="/node?page=2" title="Go to page 3" class="active">3</a></li>
+<li class="pager-item"><a href="/node?page=3" title="Go to page 4" class="active">4</a></li>
+<li class="pager-item"><a href="/node?page=4" title="Go to page 5" class="active">5</a></li>
+<li class="pager-item"><a href="/node?page=5" title="Go to page 6" class="active">6</a></li>
+<li class="pager-item"><a href="/node?page=6" title="Go to page 7" class="active">7</a></li>
+<li class="pager-next"><a href="/node?page=1" title="Go to next page" class="active">next ›</a></li>
+<li class="pager-last last"><a href="/node?page=6" title="Go to last page" class="active">last »</a></li>
+</ul></div>          </div>
+          <a href="http://span.ece.utah.edu/rss.xml" class="feed-icon"><img src="/misc/feed.png" alt="Syndicate content" title="SPAN RSS" width="16" height="16" /></a>          <div id="footer">SPAN: Sensing and Processing Across Networks | University of Utah | Department of Electrical and Computer Engineering<div id="block-system-0" class="clear-block block block-system">
+
+
+  <div class="content"><a href="http://drupal.org"><img src="/misc/powered-gray-80x15.png" alt="Powered by Drupal, an open source content management system" title="Powered by Drupal, an open source content management system" width="80" height="15" /></a></div>
+</div>
+</div>
+      </div></div></div></div> <!-- /.left-corner, /.right-corner, /#squeeze, /#center -->
+
+      
+    </div> <!-- /container -->
+  </div>
+<!-- /layout -->
+
+  
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-10305526-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+  </body>
 </html>
+
