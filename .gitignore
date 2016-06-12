@@ -5,14 +5,6 @@
 # HTML #
 *.html~
 
-# Figures #
-*.jpg
-*.jpeg
-*.JPG
-*.JPEG
-*.png
-*.pdf
-
 # Files #
 *.txt
 *.mp4
@@ -25,6 +17,3 @@
 .dropbox
 .share_info
 
-# folders
-.settings/
-data/
