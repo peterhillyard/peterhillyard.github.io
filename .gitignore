@@ -11,6 +11,8 @@
 *.qcp
 
 # App metadata #
+.gitignore~
+.Rhistory
 .DS_Store
 .project
 .pydevproject
