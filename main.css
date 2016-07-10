@@ -20,7 +20,7 @@ h2 {
 }
 
 div {
-  padding-right: 30px;
+  padding-right: 100px;
   height: 100%;
   width: 100%;
 }
@@ -32,6 +32,23 @@ video {
 
 .container {
   display: flex;
+}
+
+.banner {
+  background-color: #FFEE00;
+  max-width: 25%;
+  min-width: 140px;
+  flex: 1;
+}
+
+.banner h1 {
+  padding-left: 2px;
+}
+
+.banner p {
+  font-family: Georgia, serif;
+  padding-left: 2px;
+  font-size: 10rem;
 }
 
 .main {
@@ -47,8 +64,7 @@ video {
 }
 
 .nav h1 {
-  padding-left: 20px;
-  font-family: Palatino, 'Palatino Linotype', serif;
+  padding-left: 2px;
 }
 
 
