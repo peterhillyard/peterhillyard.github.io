@@ -17,13 +17,13 @@ h2 {
 
 
 .banner {
-	background-image: url('https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-2/bg.jpg');
-	background-position: center top;
-	background-size: cover;
-	padding: 250px 0;
-	margin: 30px;
-	text-shadow: 0 2px #000000;
-	font-family: 'Trebuchet MS', 'Helvetica';
+  background-image: url('https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-2/bg.jpg');
+  background-position: center top;
+  background-size: cover;
+  padding: 250px 0;
+  margin: 30px;
+  text-shadow: 0 2px #000000;
+  font-family: 'Trebuchet MS', 'Helvetica';
 }
 
 
@@ -33,9 +33,9 @@ p {
 }
 
 .banner a {
-	color: #00FFAA;
-	font-size: 24px;
-	text-decoration: none;
+  color: #00FFAA;
+  font-size: 120px;
+  text-decoration: none;
 }
 
 #footer {
